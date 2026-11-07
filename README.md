@@ -37,6 +37,25 @@ Android 自動化測試框架（Appium + Python），含 Page Object 分層與 A
 
 ---
 
+## 未公開的內部專案（金融資安規範）
+
+下列是我在職期間自研、但**依公司資安規範不得公開程式碼**的內部工具與平台。
+原始碼留在內部私有 repo，作品以「架構＋可驗證指標」呈現，面試時可現場 demo：
+
+| 專案 | 內容 | 成果指標 |
+|---|---|---|
+| AI Agent 測試生成流程 | 「資料／生成／執行」三層分離：解析 API 規格 → 生成測試腳本 → 自我修復 | 腳本維護成本 −30%、首版通過率 +35% |
+| AI Code Review Gate | 上版前的強制檢查點，以歷史缺陷資料做規則式缺陷預測 | 缺陷提前攔截率 95% |
+| 團隊 AI 知識庫 | 測試規範、API 規格、歷史修復案例的可檢索知識資產 | 新人上手與重複排查時間下降 |
+| 支付情境模擬工具（Flutter） | 手機端一鍵模擬 POS／超商／跨境等 7 種支付情境，取代多段 Postman 呼叫 | 測試前置作業由數十分鐘降至分鐘級 |
+| API 自動化框架 | Python 框架整合 C# 加密核心，Jenkins 產出數位化報告 | 200+ 支腳本、每日回歸 |
+| AI 日誌分類 | 密集 UAT 期自動分類 Error Log 並聚類 | RCA 時間 −50% |
+
+> 公開版以可驗證的等價作品呈現（如 [trading-gates](https://github.com/bodhi16889/trading-gates)
+> 即為同一套「fail-closed ＋ append-only 帳本」方法論的去識別化版本）。
+
+---
+
 ## 技術範圍
 
 **AI / LLM**　Ollama、Gemma、Hermes、Claude Code、GitHub Copilot Enterprise、
